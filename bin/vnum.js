@@ -29,8 +29,6 @@ cli.launch({
     }
     if(argv.path!=undefined){
         var path = env.cwd + "\\" + argv.path;
-        console.log(path);
     }
-    console.log(env.configPath);
     var vnum = require(env.configPath);
 });
