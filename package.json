@@ -4,7 +4,7 @@
   "description": "HTML Add Version",
   "main": "index.js",
   "bin":{
-    "vnum":"./index.js"
+    "vnum":"./bin/vnum.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
