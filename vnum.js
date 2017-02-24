@@ -43,6 +43,9 @@ vnum.set = function(engine,val){
  * @param callBack
  */
 vnum.task = function(path,callBack){
+    if(!fs.existsSync(path)){
+        return callBack("error",path+": node: No Such File Or Directory")
+    };
     getFile(path);
     for(let i=0;i<fileList.length;i++){
         updateFile(fileList[i],function(err,path){
