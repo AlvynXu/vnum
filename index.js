@@ -28,4 +28,18 @@ index.start = function(path,callBack){
     });
 };
 
+/**
+ * clean version number
+ * @param path
+ * @param callBack
+ */
+index.clean = function(path,callBack){
+    vnum.deleteVnum(path,function(err,msg){
+        if(err=='200'){
+            callBack('200',"删除成功")
+        }
+        callBack(err,msg);
+    });
+};
+
 module.exports = index;
